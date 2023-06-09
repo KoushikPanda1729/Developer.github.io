@@ -1,0 +1,198 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav,h4{
+    background-color: rgb(33, 40, 38);
+    text-align:right;
+    font-size: 22px;
+    font-weight: 300;
+    display: flex;
+    padding-left: 40%;
+    position: sticky;
+    top: 1px;
+    color: white;
+    z-index: 50;
+    grid-area: 20px;
+   
+}
+
+html,body{
+    line-height: 1;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+}
+
+.hero_section{
+    background-image: url('https://miro.medium.com/max/1400/0*96ehkJ6inCUH7sPF');
+    min-height: 100vh;
+    background-position: center;
+    background-size:cover ;
+    background-repeat: no-repeat;
+}
+
+.text_container{
+    color: white;
+    max-width: 900px;
+    margin: 0 auto;
+    padding-top:64px ;
+    
+}
+
+.large_text{
+    font-size: 45px;
+    font-weight: 35;
+
+}
+
+.black_box{
+    background-color: black;
+    padding:25px ;
+}
+
+.black_box h2{
+    font-size: 45px;
+    font-weight: 200;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    
+}
+.black_box h2 span{
+    font-weight: 400;
+    font-size: 65px;
+}
+
+.work{
+    display: grid;
+    padding-top:10px ;
+    gap: 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+    grid-template-columns: repeat(auto-fit, minmax(320px,1fr));
+}
+
+.cart{
+    max-width: 320px;
+    height: 400px;
+    border-radius: 10px;
+    box-shadow: 3px 5px 5px 5px gray;
+     transition: 1.3s;
+
+}
+
+.cart:hover{
+    transform: scale(1.04);
+    transition: 1.3s;
+    box-shadow: 3px 5px 5.5px 5.5px gray;
+}
+
+.grid_item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cart-content{
+    padding: 20px;
+}
+
+
+.cart-content{
+    margin-bottom: 10px;
+}
+
+.buttom{
+    padding: 40px;
+    display: flex;
+   
+}
+.aboutme{
+    
+background-color: #5156;
+}
+
+.contact{
+    
+background-color: #734;
+}
+
+.contact, 
+.aboutme{
+    border-radius: 10px;
+    min-height: 300px;
+    padding: 40px;
+    color: white;
+    letter-spacing: 1.6px;
+}
+
+.contact h2, 
+.aboutme h2{
+    font-weight: 300;
+font-size: 50px;
+}
+
+footer{
+    min-height: 40px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 60px;
+    margin: 10px;
+    border-radius: 10px;
+    letter-spacing: 1.5px;
+}
+
+@media(max-width:450px){
+   .hero_section{
+    min-height: 50vh;
+   }
+   .text_container{
+    padding: 10px;
+    text-align: center;
+
+   }
+
+   .large_text{
+    font-size: 30px;
+    text-align: center;
+   }
+
+   .black_box h2{
+ font-size: 32px;
+
+   }
+   .black_box h2 span{
+    font-weight:400 ;
+    font-size: 32px;
+   }
+
+   .buttom{
+    padding: 40px;
+ flex-direction: column;
+   
+}
+
+.contact h2, 
+.aboutme h2{
+    font-size: 32px;
+}
+
+.footer{
+    font-size: 50px;
+}
+.nav{
+    font-size: 10px;
+    text-align: center;
+}
+
+}
